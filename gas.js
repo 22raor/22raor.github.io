@@ -221,6 +221,3 @@ var chart3 = new Chart(c3, {
     }
   }
 });
-
-
-
