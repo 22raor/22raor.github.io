@@ -46,9 +46,9 @@ function update() {
   let final = ((moneyIndex + timeIndex)/2).toFixed(2); 
   
   if(final >= 5){
-     $("#results").html(`On a scale of 1 to 10, our model rates the detour at ${final}. The model recommends that you take the detour to the gas station. You will save about $${netRound}.`);
+     $("#results").html(`On a scale of 0 to 10, our model rates the detour at ${final}. The model recommends that you take the detour to the gas station. You will save about $${netRound}.`);
   } else if (final < 5){
-     $("#results").html(`On a scale of 1 to 10, our model rates the detour at ${final}. The model does not recommend the detour.`);
+     $("#results").html(`On a scale of 0 to 10, our model rates the detour at ${final}. The model does not recommend the detour.`);
   }
   
   
