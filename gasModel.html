@@ -14,36 +14,28 @@
 
   <div class="ui longer modal transition hidden">
     <div class="header">
-      Profile Picture
+      Graphs
     </div>
     <div class="scrolling image content">
       <div class="description">
-        <div class="ui header sans">Cool Graphs </div>
-        <p class="sans">This is some nice content</p>
-
+        <div class="ui header sans">Individual Factors</div>
+        <p class="sans">These graphs use average values for mileage and tank capacity and show how the factors changes with different distances. </p>
+    <div class="ui divider"></div>
+           <h2>Monetary Savings</h2>
+        
         <div id="canvas-holder" style="width:100%">
           <canvas id="chart1" />
         </div>
 
         <div class="ui divider"></div>
 
+        <h2>Time Savings</h2>
+        
         <div id="canvas-holder" style="width:100%">
           <canvas id="chart2" />
         </div>
 
-        <div class="ui divider"></div>
-
-        <div id="canvas-holder" style="width:100%">
-          <canvas id="chart3" />
-        </div>
-
-        <div class="ui divider"></div>
-
-        <div class="ui divider"></div>
-
-        <div class="ui divider"></div>
-
-        <div class="ui divider"></div>
+  
 
       </div>
     </div>
@@ -137,7 +129,7 @@
             </div>
             <div class="content">
               <p class="transition hidden sans">
-                hi whats up
+                This model is based on two factors. First, it calculates the monetary savings from going to the gas station. Next, it models how much time is wasted to do so. Both of these factors are standardized on an index from 1 to 10, and used equally in the final model, which is also on a scale from 1 to 10. The monetary savings uses a four parameter logistics model and the time index is based on a rational function. Click below to see graphs of each factor. 
 
                 <div class="ui animated button" size="tiny" id="gbutton" tabindex="0" onclick="showModal();">
                   <div class="visible content">Open Graphs</div>
@@ -152,14 +144,28 @@
               What data was used?
             </div>
             <div class="content">
-              <p class="transition hidden sans">Oompa Loompa.</p>
+              <p class="transition hidden sans">The average US price of gas, $2.51 as of December 7, 2020, was used to calculate monetary savings. Average values for mileage and tank capacity are used in the graphs above as well as in the logistic model for monetary savings. All other data is supplied by the user. </p>
             </div>
             <div class="title">
               <i class="dropdown icon"></i>
               What assumptions are made?
             </div>
             <div class="content">
-              <p class="transition hidden sans">uno dos tres .</p>
+              <p class="transition hidden sans">
+                Assumption 1: The gas being sold at the gas station is compatible with Alex’s vehicle. 
+Justification: If the gas is not compatible, there is no need for a mathematical model, as there is evidently no benefit in going to the gas station. 
+<br /> 
+Assumption 2: Alex will fill her vehicle’s fuel tank completely if she decides to get gas. 
+Justification: Filling up the tank completely will always provide the most benefit for going to the gas station. 
+<br /> 
+Assumption 3: After detouring to fill her gas, Alex must return to her original location to continue going home.
+Justification: It is impossible to model how much closer the gas station takes Alex to her house because of the various possibilities of routes and locations of the house and gas station. 
+<br /> 
+Assumption 4: The average price of gasoline across the United States ($2.506 per gallon) is applicable to all cities in the U.S. 
+Justification: The standard deviation for the price of gasoline in the United States is only $0.14 per gallon, so assuming the national average is reasonable for the model. 
+     <br />            
+                
+              </p>
             </div>
           </div>
 
