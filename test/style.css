@@ -1,7 +1,3 @@
 .ui.button {
   background: #ACCFCF;
 }
-
-body {
-  touch-action: none;
-}
