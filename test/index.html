@@ -2,71 +2,56 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Phone Controller Ting</title>
+  <title>CodePen - Mobile Ting?</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.3/semantic.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<head> 
-
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-</head>
+<meta name="viewport" content= "width=device-width, user-scalable=no">
 
 <body style="background-color:#D0D0D0;">
 
-   <div id="Welcome Page">
-     <div class="ui three column centered padded grid">
-       <div class="row">
-         <div class="column">
-           <h2 class="ui header">
-             <i class="coffee icon"></i>
-             <div class="content">
-               Welcome
-             </div>
-           </h2>
-           <div class="ui message attached">
-             <p id="logger">Please Log in.</p>
-           </div>
-           <div class="ui segment very padded attached">
-             <div id="centerer">
-               <div class="ui animated button massive" tabindex="0" onclick="return control(0);">
-                 <div class="visible content"> <i class="left arrow icon"></i> </div>
-                 
-                  
-                 </div>
-               
-                <div class="ui animated button massive" tabindex="0" onclick="return control(1);">
-                 <div class="visible content"> <i class="right arrow icon"></i> </div>
-                 
-                  
-                 </div>
-               
-              <div class="ui divider"></div>
-               <div class="ui action input">
+<div class = "ui centered grid"> 
+  <div class="three wide computer nine wide tablet six wide mobile column">
+    <div class="ui segment">
+      <div class="ui button fluid large" tabindex="0" onclick="return control(0);"> 
+       <i class="left arrow icon"></i> 
+      </div>
+      
+    </div>
+    
+    
+  </div>
+  
+   <div class="three wide computer nine wide tablet six wide mobile column">
+    <div class="ui segment">
+     <div class="ui button fluid large" tabindex="0" onclick="return control(1);"> 
+      <i class="right arrow icon"></i> </div>
+     </div>
+  </div>
+  
+  
+  
+</div>
+  <div class="ui divider">
+  <div class = "ui centered grid"> 
+    
+    <div class="three wide computer nine wide tablet six wide mobile column">
+      
+        <div class="ui action input">
   <input type="text" placeholder="Unique ID" id="logbox">
   <button class="ui button" onclick="login();">Login</button>
 </div>
-               </div>
- 
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>   
-   
+      
+    </div>
+              </div>
+             
   
-  
- 
-  
-  
- </body>
+  </div>
 
-
-  <meta charset="utf-8">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
   <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
 
 <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>

@@ -1,5 +1,5 @@
 var currentUser = "";
-if(document.cookie!=""){
+if(document.cookie!=""){ 
   
   let temp = document.cookie.replace("user=", "");
   document.getElementById("logger").innerText = "You are logged in";
