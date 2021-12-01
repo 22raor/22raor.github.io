@@ -2,14 +2,14 @@ var currentUser = "";
 if(document.cookie!=""){ 
   
   let temp = document.cookie.replace("user=", "");
-  document.getElementById("logger").innerText = "You are logged in";
+  document.getElementById("logger").innerText = "Welcome: You are logged in";
   currentUser = temp;
 }
 
 function login() {
   var m = document.getElementById("logbox").value;
  document.cookie = "user=" + m;
- currentUser = m; document.getElementById("logger").innerText = "You are logged in";
+ currentUser = m; document.getElementById("logger").innerText = "Welcome: You are logged in";
 }
 
 
